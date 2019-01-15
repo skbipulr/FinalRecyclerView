@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content">
+
+<android.support.v7.widget.CardView
+    android:id="@+id/card_view"
+    android:background="@color/cardview_shadow_end_color"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/nameTV"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:inputType="text"
+            android:textColor="@android:color/holo_blue_bright"
+            />
+
+        <TextView
+            android:id="@+id/phoneNumberTV"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameTV"
+            android:hint="Phone Number"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="18dp"
+            android:textStyle="italic|bold" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+
+</LinearLayout>
